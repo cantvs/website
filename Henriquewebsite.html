@@ -1,0 +1,142 @@
+		<!-- Website do Henrique -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Cantus Portugueses</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="styles.css" rel="stylesheet">
+	<link rel="icon" href="CantusFavicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	
+	</head>
+<body>
+	<header>
+		<nav>
+    			<img class= "Logo" src="LOGOEDITBIGGERLETTERS.png" alt="Cantus Portugueses Logo" style="cursor: pointer;" onclick="redirectToLink()";>
+    		<div class= "buttons">
+				<a class= "Menu" href="https://cantusportugueses.com/">Home</a>
+    			<a class= "Menu" href="#">Contact</a>
+			</div>
+			<div class="fav">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-youtube"></a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="Hero">
+	</div>
+	
+	<div class="myname">
+		<h1> CANTVS PORTVGVESES </h1> 
+					
+	</div>
+	
+	<div class="mega">
+		
+
+		<div class="lang">
+			<img class= "PT" src="PT.png" alt="portuguese" onclick="changeLanguage('PT')">
+			<img class= "DE" src="DE.png" alt="german" onclick="changeLanguage('DE')">
+		</div>
+
+		<div class="box">
+			<p id="textContent">
+				</p>
+		</div>
+		
+	</div>
+	
+	<div class="mynews">
+		<h2> NEWS </h2> 
+	</div>
+
+	<div id="news">
+		<box id="box1"><h3>Junte-se ao nosso Coro</h3><p>Encontros semanais à quinta-feira onde poderá cantar em português. Mais informações quando eu as tiver.</p></box>
+		<box id="box2"><h3>Aulas de Guitarra Portuguesa, <br /> Cavaquinho e Viola</h3><p>Aulas Semanais aos Sábados, inscreva-se já!</p></box>
+		<box id="box3"><h3>Hie</h3><p>News here</p></box>
+
+	</div>
+
+	<div class="mega">
+		<div id="myconcerts">
+			<h2> CONCERTS </h2> 
+		</div>
+	<div class="concerts">
+
+	</div>
+
+
+	</div>
+
+
+	<script>
+		function redirectToLink() {
+   			 window.location.href = "https://cantusportugueses.com";}
+
+		function changeLanguage(language) {
+			var textContentElement = document.getElementById('textContent');
+		
+
+			if (language === 'PT') {
+				textContentElement.textContent = `O ensemble Cantus Portugueses é um grupo formado em 2017 e constituído 
+				essencialmente por músicos estudantes e ex-estudantes da Hochschule für Musik und Tanz Köln. 
+				O seu repertório é constituído por arranjos originais de música tradicional portuguesa, trazendo ao palco melodias conhecidas e características de diferentes regiões de Portugal. 
+				Trata-se de uma abordagem pessoal transposta a outro contexto estilístico, utilizando elementos da música erudita e aproveitando a bagagem e o percurso musical diversos dos elementos do grupo.`;
+				
+			} else if (language === 'DE') {
+				textContentElement.textContent = `Cantus Portugueses ist ein Ensemble, das sich der Verbreitung und Interpretation der traditionellen portugiesischen Musik widmet. 
+				Seit seiner Gründung in 2017, bringt es Instrumental- und Chormusik auf die Bühne, die sowohl auf traditionellen Instrumenten als auch auf Orchesterinstrumenten interpretiert wird. 
+				Es besteht aus etwa 20 Mitgliedern, Studenten und ehemaligen Studenten der Hochschule für Musik und Tanz Köln, und sein Repertoire umfasst Musik aus verschiedenen Regionen Portugals.`;
+		
+			}
+			// Store the selected language in localStorage
+			localStorage.setItem('selectedLanguage', language);
+		}
+			
+			// Function to retrieve the stored language and set the content
+  			function setInitialLanguage() {
+	    var storedLanguage = localStorage.getItem('selectedLanguage');
+    	if (storedLanguage) {
+    	  changeLanguage(storedLanguage);
+   		 } else {
+      	// Set a default language if none is stored
+      	changeLanguage('PT');
+   		 }
+		}
+			window.onload = setInitialLanguage;
+		
+		
+		
+		//This is the beginning of the News timer thing
+		
+		function exchangeContent() {
+	  var newsContainer = document.getElementById('news');		
+      var box1 = document.getElementById('box1');
+      var box2 = document.getElementById('box2');
+	  var box3 = document.getElementById('box3');
+
+      var contentOfBox3 = box3.innerHTML;
+
+      newsContainer.style.transform = 'translateX(-1%)';
+      setTimeout(function () {
+        box3.innerHTML = box2.innerHTML;
+        box2.innerHTML = box1.innerHTML;
+        box1.innerHTML = contentOfBox3;
+        newsContainer.style.transform = 'translateX(0)';
+      }, 500); // Adjust the timeout duration to match the transition duration
+    }
+
+    // Set interval to exchange content every 3 seconds (3000 milliseconds)
+    setInterval(exchangeContent, 4000);
+    
+
+	</script>
+
+</body>
+</html>
