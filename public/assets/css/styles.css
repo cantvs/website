@@ -58,6 +58,10 @@ html { height: 100%;}
     margin-right: -220px;
 }
 
+.page-section {
+  padding: 6rem 0;
+}
+
 /*-------------------------------*/
 /*     Sidebar nav styles        */
 /*-------------------------------*/
@@ -303,7 +307,7 @@ a[href*="#followme"]::before {
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
-  background-color: #1a1a1a;
+  background-color: #fafafa;
 }
 .hamburger.is-closed .hamb-top {
   top: 5px;
@@ -391,4 +395,111 @@ a[href*="#followme"]::before {
   height: 100%;
   width: 100%;
   object-fit: cover; /* Ensures the image covers the entire div */
+}
+
+#news {
+  background: #d5e1cc;
+  padding: 50px;
+	display: flex;
+	flex-flow: wrap;
+}
+
+#about {
+  background: #CFD8DC;
+}
+
+#events {
+  background: #cfbbbb;
+}
+#events thead{
+  background-color: #7d5d81;
+}
+
+
+
+
+/* CARDS */
+
+.card-container {
+  flex: 300px;
+  margin: 30px;
+}
+
+.card {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+}
+
+.card a {
+  padding: 30px;
+  width: 100%;
+  height: 400px;
+  border: 2px solid black;
+  background: white;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.25s ease;
+}
+
+.card a:hover {
+  transform: translate(-30px, -30px);
+  border-color: #5bc0eb;
+}
+
+.card a:hover .card--display {
+  display: none;
+}
+
+.card a:hover .card--hover {
+  display: block;
+}
+
+.card--display i {
+  font-size: 60px;
+  margin-top: 200px;
+}
+
+.card--display h2 {
+  margin: 20px 0 0;
+}
+
+.card--hover {
+  display: none;
+}
+
+.card--hover h2 {
+  margin: 20px 0;
+}
+
+.card--hover p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.card--hover p.link {
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #5bc0eb;
+}
+
+.card--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: 2px dashed black;
+  z-index: -1;
+}
+
+.card--dark a {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.card--dark a .card--hover .link {
+  color: #fde74c;
 }
