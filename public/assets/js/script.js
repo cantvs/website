@@ -51,6 +51,12 @@ function setLanguage(lang) {
 }
 
 function setLanguageText() {
+  // $('#home').text(language.home);
+  // $('#news').text(language.news);
+  // $('#about').text(language.about);
+  // $('#events').text(language.events);
+  // $('#gallery').text(language.gallery);
+  // $('#contact').text(language.cont);
   $('#bio').text(language.bio);
   $('#concerts_date').text(language.concerts_date);
   $('#concerts_place').text(language.concerts_place);

@@ -1,4 +1,10 @@
 {
+    "home":"Home",
+    "news":"News",
+    "about":"Über",
+    "events":"Konzerte",
+    "gallery":"Gallery",
+    "contact":"Kontakt",
     "card1_question":"Próximo Concerto",
     "card1_answer":"Próximo Concerto",
     "card1_text":"16 de Novembro no Bügerzentrum Ehrenfeld",
