@@ -441,13 +441,13 @@ a[href*="#followme"]::before {
 /* Centered text */
 .hero-text {
   position: absolute;
-  top: 77px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Libre Baskerville', serif;
-  font-size: 6vw;
+  font-size: 3rem;
   font-weight: 600;
-  letter-spacing: 3rem;
+  letter-spacing: 1.5rem;
   color: #fff;
   opacity: 0.8;
 }

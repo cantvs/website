@@ -1,148 +1,307 @@
-		<!-- Website do Henrique -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Cantus Portugueses</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="styles.css" rel="stylesheet">
-	<link rel="icon" href="CantusFavicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-	
-	</head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cantus Portugueses</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="CantusFavicon.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+</head>
+
 <body>
-	<header>
-		<nav>
-    			<img class= "Logo" src="LOGOEDITBIGGERLETTERS.png" alt="Cantus Portugueses Logo" style="cursor: pointer;" onclick="redirectToLink()";>
-    		<div class= "buttons">
-				<a class= "Menu" href="https://cantvs.com/">Home</a>
-    			<a class= "Menu" href="#email">Contact</a>
-			</div>
-			<div class="fav">
-				<a href="https://www.facebook.com/cantusportugueses" class="fa fa-facebook"></a>
-				<a href="https://www.instagram.com/cantusportugueses/?hl=en" class="fa fa-instagram"></a>
-				<a href="https://www.youtube.com/@cantusportugueses344" class="fa fa-youtube"></a>
-			</div>
-		</nav>
-	</header>
 
-		<div class="Hero">
-		</div>
-		
-		<div class="myname">
-			<h1> CANTVS PORTVGVESES </h1> 				
-		</div>
-		
-		<div class="mega">
-			
+  <div id="wrapper">
+    <div class="overlay"></div>
 
-			<div class="lang">
-				<img class= "PT" src="PT.png" alt="portuguese" onclick="changeLanguage('PT')">
-				<img class= "DE" src="DE.png" alt="german" onclick="changeLanguage('DE')">
-			</div>
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <a href="#"><img id="sidebar-img" src="assets/img/logo.png" alt="Cantus Logo"></a>
+          </div>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Concerts</a></li>
+        <!-- <li><a href="#team">Team</a></li> -->
+        <!-- <li><a href="#gallery">Gallery</a></li> -->
+        <!-- <li class="dropdown">
+          <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Gallery <span class="caret"></span></a>
+          <ul class="dropdown-menu animated fadeInLeft" role="menu">
+            <li><a href="#pictures">Pictures</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#audios">Audios</a></li>
+          </ul>
+        </li> -->
+        <!-- <li><a href="#merch">Merch</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+          <a href="#social" class="dropdown-toggle" data-toggle="dropdown">Social
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu animated fadeInLeft" role="menu">
+            <li><a class="side_social" href="https://www.instagram.com/cantusportugueses" target="_blank"><i
+                  class="fab fa-instagram fa-fw"></i> Instagram</a></li>
+            <li><a class="side_social" href="https://www.youtube.com/@cantusportugueses344" target="_blank"><i
+                  class="fab fa-youtube fa-fw"></i> Youtube</a></li>
+            <li><a class="side_social" href="https://www.facebook.com/cantusportugueses" target="_blank"><i
+                  class="fab fa-facebook fa-fw"></i> Facebook</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#languages" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">translate</i>
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu animated fadeInLeft" role="menu">
+            <li onclick="setLanguage('DE');"><a href="#lang-de">DE</a></li>
+            <li onclick="setLanguage('PT');"><a href="#lang-pt">PT</a></li>
+            <li onclick="setLanguage('EN');"><a href="#lang-pt">EN</a></li>
+          </ul>
+        </li>
 
-			<div class="box">
-				<p id="textContent">
-					</p>
-			</div>
-			
-		</div>
-		
-		<div class="mynews">
-			<h2> NEWS </h2> 
-		</div>
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
 
-		<div id="news">
-			<box id="box1"><h3>Novo Website</h3><p>Ainda em construção, mas brevemente com mais informações para si</p></box>
-			<box id="box2"><h3>Lançamento do CD CANTVS!</h3><p>Esteja atento às nossas redes sociais para não perder o lançamento do nosso primeiro álbum</p></box>
-			<box id="box3"><h3>Novo Videoclipe já no youtube</h3><p>Video da canção Mi Morena gravada no atelier do artista João de Almeida na Wachsfabrik em Colónia</p></box>
-		</div>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="fullscreen-div">
+            <img src="assets/img/Cantus_Portugueses_Anna_Tena_hero.jpg" alt="Full Viewport Image">
+            <div class="hero-text">Cantvs</div>
+          </div>
+        </div>
+      </div>
 
-		<div class="mega">
-			<div class="myconcerts">
-				<h2> CONCERTS </h2> 
-			</div>
+      <section class="page-section d-flex" id="news">
 
-		<div class="concerts">
-			<p class="concertos">16 de Novembro no Bügerzentrum Ehrenfeld</p>
-		</div>
+        <div class="card-container">
+          <div class="card">
+            <a href="hottub">
+              <div class="card--display">
+                <i class="material-icons">equalizer</i>
+                <h2 id="card1_question">Next Concert</h2>
+              </div>
+              <div class="card--hover">
+                <h2 id="card1_answer">Next Concert</h2>
+                <p id="card1_text">Our next concert will at the Burgerzentrum Ehrenfeld (BüzE) 16th November at 20h</p>
+                <p class="card_link">Click to see more</p>
+              </div>
+            </a>
+            <div class="card--border"></div>
+          </div>
+        </div>
 
-		<div class="mega"></div>
-			<div class="myconcerts">
-				<h2> CONTACT </h2> 
-			</div>
-		<div>
-			<p id="email">info@cantusportugueses.com</p>
-		</div>
+        <div class="card-container">
+          <div class="card">
+            <a href="worldweb">
+              <div class="card--display">
+                <i class="material-icons">album</i>
+                <h2 id="card2_question">Album</h2>
+              </div>
+              <div class="card--hover">
+                <h2 id="card2_answer">Album</h2>
+                <p id="card2_text">Stay tuned to our social networks so you don't miss the release of our first album.</p>
+                <p class="card_link">Click to see more</p>
+              </div>
+            </a>
+            <div class="card--border"></div>
+          </div>
+        </div>
 
-	</div>
+        <div class="card-container">
+          <!-- <div class="card card--dark"> -->
+          <div class="card">
+            <a href="phonesoff">
+              <div class="card--display">
+                <i class="material-icons">movie</i>
+                <h2 id="card3_question">Video Clip</h2>
+              </div>
+              <div class="card--hover">
+                <h2 id="card3_answer">Video Clip</h2>
+                <p id="card3_text">Video of the song Mi Morena, recorded at the artist João de Almeida's atelier in the Wachsfabrik in Cologne.</p>
+                <p class="card_link">Click to see more</p>
+              </div>
+            </a>
+            <div class="card--border"></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <a href="trainthings">
+              <div class="card--display">
+                <i class="material-icons">train</i>
+                <h2 id="card4_question">Tour</h2>
+              </div>
+              <div class="card--hover">
+                <h2 id="card4_question">Tour</h2>
+                <p id="card4_text">We play mostly in the NRW area, but we will be on tour in 2025 with concerts in Berlin and Hamburg.</p>
+                <p class="card_link">Click to see more</p>
+              </div>
+            </a>
+            <div class="card--border"></div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <!-- <div class="card card--dark"> -->
+          <div class="card">
+            <a href="androidupdate">
+              <div class="card--display">
+                <i class="material-icons">phone_iphone</i>
+                <h2 id="card5_question">Follow us</h2>
+              </div>
+              <div class="card--hover">
+                <h2 id="card5_answer">Follow us</h2>
+                <p id="card5_text">If you find us on instagram, youtube or facebook please follow us. That helps us reaching a wider audience.</p>
+                <p class="card_link">Click to see more</p>
+              </div>
+            </a>
+            <div class="card--border"></div>
+          </div>
+        </div>
 
 
-	<script>
-		function redirectToLink() {
-   			 window.location.href = "https://cantusportugueses.com";}
+      </section>
 
-		function changeLanguage(language) {
-			var textContentElement = document.getElementById('textContent');
-		
+      <section class="page-section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h1>Cantvs</h1>
+              <p id="bio">Cantvs is a group formed in 2017, made up primarily of student and former student
+                musicians from the Hochschule für Musik und Tanz Köln. Our repertoire consists of
+                original arrangements of traditional Portuguese music, bringing to the stage well-known
+                melodies and characteristics from different regions of Portugal. It is a personal
+                approach transposed into another stylistic context, using elements of classical music
+                and drawing on the diverse musical backgrounds and experiences of the group's members.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section" id="events">
+        <div class="container">
+          <h1 id="concerts_heading">Concerts</h1>
+          <table class="table table-striped text-white mt-5 border-white">
+            <thead>
+              <tr class="font-weight-bold">
+                <th scope="col" id="concerts_date">Date</th>
+                <th scope="col" id="concerts_place">Place</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Saturday, 16.11.2024</th>
+                <td><a class="text-white" href="https://g.co/kgs/MPu8b52">Bürgerzentrum Ehrenfeld (BüzE)</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="page-section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <h1 id="contact_heading">Contact</h1>
+              <p id="conctat_text">info @ cantusportugueses.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-section" id="sponsors">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-3 m-3">
+            <img class="sponsors_image" src="assets/img/sponsors/Logo+DGACCP+(horizontal).jpg" alt="DGACCP Logo">
+          </div>
 
-			if (language === 'PT') {
-				textContentElement.textContent = `O ensemble Cantus Portugueses é um grupo formado em 2017 e constituído 
-				essencialmente por músicos estudantes e ex-estudantes da Hochschule für Musik und Tanz Köln. 
-				O seu repertório é constituído por arranjos originais de música tradicional portuguesa, trazendo ao palco melodias conhecidas e características de diferentes regiões de Portugal. 
-				Trata-se de uma abordagem pessoal transposta a outro contexto estilístico, utilizando elementos da música erudita e aproveitando a bagagem e o percurso musical diversos dos elementos do grupo.`;
-				
-			} else if (language === 'DE') {
-				textContentElement.textContent = `Cantus Portugueses ist ein Ensemble, das sich der Verbreitung und Interpretation der traditionellen portugiesischen Musik widmet. 
-				Seit seiner Gründung in 2017, bringt es Instrumental- und Chormusik auf die Bühne, die sowohl auf traditionellen Instrumenten als auch auf Orchesterinstrumenten interpretiert wird. 
-				Es besteht aus etwa 20 Mitgliedern, Studenten und ehemaligen Studenten der Hochschule für Musik und Tanz Köln, und sein Repertoire umfasst Musik aus verschiedenen Regionen Portugals.`;
-		
-			}
-			// Store the selected language in localStorage
-			localStorage.setItem('selectedLanguage', language);
-		}
-			
-			// Function to retrieve the stored language and set the content
-  			function setInitialLanguage() {
-	    var storedLanguage = localStorage.getItem('selectedLanguage');
-    	if (storedLanguage) {
-    	  changeLanguage(storedLanguage);
-   		 } else {
-      	// Set a default language if none is stored
-      	changeLanguage('PT');
-   		 }
-		}
-			window.onload = setInitialLanguage;
-		
-		
-		
-		//This is the beginning of the News timer thing
-		
-		function exchangeContent() {
-	  var newsContainer = document.getElementById('news');		
-      var box1 = document.getElementById('box1');
-      var box2 = document.getElementById('box2');
-	  var box3 = document.getElementById('box3');
+          <div class="col-md-6 col-lg-3 m-3">
+            <img class="sponsors_image" src="assets/img/sponsors/botschaft_logo.jpg" alt="Botschaft Portugal Logo">
+          </div>
+          <div class="col-md-6 col-lg-3 m-3">
+            <img class="sponsors_image" src="assets/img/sponsors/logo-ifm.svg" alt="Musik in Köln">
+          </div>
+          <div class="col-md-6 col-lg-3 m-3">
+            <!-- <img class="sponsors_image" src="assets/img/sponsors/camoes.jpg" alt="Instituto Camoes Logo">
+          </div>
+          <div class="col-md-6 col-lg-3 m-3">
+            <img class="sponsors_image" src="assets/img/sponsors/logo-stadt-koeln.svg" alt="Stadt Koeln Logo">
+          </div>
+          <div class="col-md-6 col-lg-3 m-3">
+            <img class="sponsors_image" src="assets/img/sponsors/ifm-logo.jpg" alt="IFM Logo">
+          </div> -->
+      </section>
+      <footer class="footer text-center bg-dark text-light pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Organisation</h4>
+              <p class="lead mb-0">
+                Cantus Portugueses e.V.<br>
+                Holweider Str. 100<br>
+                51065 Köln
+              </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase mb-4">Around the Web</h4>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/cantusportugueses"
+                target="_blank "><svg class="svg-inline--fa fa-instagram fa-w-14 fa-fw" aria-hidden="true"
+                  focusable="false" data-prefix="fab" data-icon="instagram" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                  </path>
+                </svg><!-- <i class="fab fa-fw fa-instagram"></i> Font Awesome fontawesome.com --></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@cantusportugueses344"
+                target="_blank"><i class="fab fa-youtube"></i></a>
+              <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/cantusportugueses"
+                target="_blank"><svg class="svg-inline--fa fa-facebook-f fa-w-10 fa-fw" aria-hidden="true"
+                  focusable="false" data-prefix="fab" data-icon="facebook-f" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                  </path>
+                </svg><!-- <i class="fab fa-fw fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4">
+              <h4 class="text-uppercase mb-4">Legal</h4>
+              <p class="lead mb-0">
+                <a href="impressum.html">Impressum</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
 
-      var contentOfBox3 = box3.innerHTML;
+  <!-- /#wrapper -->
 
-      newsContainer.style.transform = 'translateX(-1%)';
-      setTimeout(function () {
-        box3.innerHTML = box2.innerHTML;
-        box2.innerHTML = box1.innerHTML;
-        box1.innerHTML = contentOfBox3;
-        newsContainer.style.transform = 'translateX(0)';
-      }, 500); // Adjust the timeout duration to match the transition duration
-    }
-
-    // Set interval to exchange content every 3 seconds (3000 milliseconds)
-    setInterval(exchangeContent, 4000);
-    
-
-	</script>
-
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
