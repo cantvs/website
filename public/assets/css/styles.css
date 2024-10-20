@@ -445,7 +445,7 @@ a[href*="#followme"]::before {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Libre Baskerville', serif;
-  font-size: 8rem;
+  font-size: 6vw;
   font-weight: 600;
   letter-spacing: 3rem;
   color: #fff;
@@ -591,3 +591,10 @@ footer a{
   display: inline-block;
   width: 100%;
 } */
+
+.go_back_arrow {
+  padding-left: 10px;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
