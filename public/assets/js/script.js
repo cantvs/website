@@ -77,6 +77,7 @@ function setLanguageText() {
   $('#concerts_heading').text(language.concerts_heading);
   $('#concerts_date').text(language.concerts_date);
   $('#concerts_place').text(language.concerts_place);
+  $('#contact_heading').text(language.contact_heading);
 
   // $('#card1_question').text(language.card1_question);
   // $('#bio').text(language.bio);

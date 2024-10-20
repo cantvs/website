@@ -471,6 +471,9 @@ a[href*="#followme"]::before {
   background-color: #7d5d81;
 }
 
+#contact {
+  background: #d5e1cc;
+}
 
 
 
