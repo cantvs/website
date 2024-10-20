@@ -268,13 +268,14 @@ a[href*="#services"]::before {
 a[href*="#contact"]::before {
   content: "\f086" !important;
 } */
-#instalink {
+/* #instalink {
   padding-left: 12px;
 }
+
 a[href*="#followme"]::before {
   content: "\f16d" !important;
-  /* color: #0084b4; */
-}
+  color: #0084b4;
+} */
 
 /*-------------------------------*/
 /*       Hamburger-Cross         */
@@ -566,5 +567,27 @@ a[href*="#followme"]::before {
 }
 
 table.table-striped tbody tr {
-  border-bottom: 1px solid white; /* Apply white borders to rows */
+  border-bottom: 1px solid white;
+  /* Apply white borders to rows */
 }
+
+footer a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #sidebar-wrapper > ul > li .side_social {
+  display: inline-block;
+  width: 100%;
+} */
