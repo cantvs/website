@@ -85,10 +85,10 @@
             <a href="hottub">
               <div class="card--display">
                 <i class="material-icons">equalizer</i>
-                <h2 id="card1-question">Next Concert</h2>
+                <h2 id="card1_question">Next Concert</h2>
               </div>
               <div class="card--hover">
-                <h2 id="card1-answer">Next Concert</h2>
+                <h2 id="card1_answer">Next Concert</h2>
                 <p id="card1-text">Our next concert will at the Burgerzentrum Ehrenfeld (BUZE) 16th November at 20h</p>
                 <p class="link">Click to see project</p>
               </div>
@@ -102,10 +102,10 @@
             <a href="worldweb">
               <div class="card--display">
                 <i class="material-icons">album</i>
-                <h2>Album</h2>
+                <h2 id="card2_question">Album</h2>
               </div>
               <div class="card--hover">
-                <h2>Album</h2>
+                <h2 id="card2_answer">Album</h2>
                 <p>Esteja atento às nossas redes sociais para não perder o lançamento do nosso primeiro álbum</p>
                 <p class="link">Click to see project</p>
               </div>
@@ -120,11 +120,11 @@
             <a href="phonesoff">
               <div class="card--display">
                 <i class="material-icons">movie</i>
-                <h2>Video Clip</h2>
+                <h2 id="card3_question">Video Clip</h2>
               </div>
               <div class="card--hover">
-                <h2>Video Clip</h2>
-                <p>Video da canção Mi Morena gravada no atelier do artista João de Almeida na Wachsfabrik em Colónia</p>
+                <h2 id="card3_answer">Video Clip</h2>
+                <p id="card3_text">Video da canção Mi Morena gravada no atelier do artista João de Almeida na Wachsfabrik em Colónia</p>
                 <p class="link">Click to see project</p>
               </div>
             </a>
@@ -137,11 +137,11 @@
             <a href="trainthings">
               <div class="card--display">
                 <i class="material-icons">train</i>
-                <h2>Tour</h2>
+                <h2 id="card4_question">Tour</h2>
               </div>
               <div class="card--hover">
-                <h2>Tour</h2>
-                <p>We play mostly in the NRW area, but we will be on tour.</p>
+                <h2 id="card4_question">Tour</h2>
+                <p id="card4_text">We play mostly in the NRW area, but we will be on tour.</p>
                 <p class="link">Click to see more</p>
               </div>
             </a>
@@ -155,11 +155,11 @@
             <a href="androidupdate">
               <div class="card--display">
                 <i class="material-icons">phone_iphone</i>
-                <h2>Follow us</h2>
+                <h2 id="card5_question">Follow us</h2>
               </div>
               <div class="card--hover">
-                <h2>Follow us</h2>
-                <p>If you find us on insta, youtube, please follow us.</p>
+                <h2 id="card5_answer">Follow us</h2>
+                <p id="card5_text">If you find us on insta, youtube, please follow us.</p>
                 <p class="link">Click to see project</p>
               </div>
             </a>
@@ -229,6 +229,35 @@
       </section>
     </div>
   </div>
+  <footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Organisation</h4>
+                <p class="lead mb-0">
+                    Cantus Portugueses e.V.<br>
+                    Morada<br>
+                    Köln
+                </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Around the Web</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/cantusportugueses" target="_blank "><svg class="svg-inline--fa fa-instagram fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <i class="fab fa-fw fa-instagram"></i> Font Awesome fontawesome.com --></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@cantusportugueses344" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/cantusportugueses" target="_blank"><svg class="svg-inline--fa fa-facebook-f fa-w-10 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!-- <i class="fab fa-fw fa-facebook-f"></i> Font Awesome fontawesome.com --></a>
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">Legal</h4>
+                <p class="lead mb-0">
+                    <a href="#" target="_blank">Impressum</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
   <!-- /#wrapper -->
 
   <script src="assets/js/script.js"></script>
