@@ -441,7 +441,7 @@ a[href*="#followme"]::before {
 /* Centered text */
 .hero-text {
   position: absolute;
-  top: 70px;
+  top: 120px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Libre Baskerville', serif;
