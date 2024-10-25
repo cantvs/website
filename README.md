@@ -28,3 +28,16 @@ Maybe we should do font awesome locally
 </body>
 ```
 
+# Bugs
+
+This code creates an offset in the links of the pages. Probably due to the transitions in the CSS
+
+View commit 88798bd6
+```
+   // Close sidebar when any link inside it is clicked
+    $('.side_link').click(function () {
+      if ($('#wrapper').hasClass('toggled')) {
+          $('#wrapper').removeClass('toggled');
+      }
+      hamburger_cross();
+  });
