@@ -30,7 +30,7 @@ Maybe we should do font awesome locally
 
 # Bugs
 
-This code creates an offset in the links of the pages. Probably due to the transitions in the CSS
+This code creates an overshooting after clinking links to the sections on the sidebar. Probably due to the transitions in the CSS
 
 View commit 88798bd6
 ```
@@ -41,3 +41,4 @@ View commit 88798bd6
       }
       hamburger_cross();
   });
+```
