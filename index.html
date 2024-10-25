@@ -34,10 +34,10 @@
             <a href="#"><img id="sidebar-img" src="assets/img/logo.png" alt="Cantus Logo"></a>
           </div>
         </div>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Concerts</a></li>
+        <!-- <li><a class="side_link" id="home_sidebar" href="#home">Home</a></li> -->
+        <li><a class="side_link" id="news_sidebar" href="#news">News</a></li>
+        <li><a class="side_link" id="about_sidebar" href="#about">About</a></li>
+        <li><a class="side_link" id="events_sidebar" href="#events">Concerts</a></li>
         <!-- <li><a href="#team">Team</a></li> -->
         <!-- <li><a href="#gallery">Gallery</a></li> -->
         <!-- <li class="dropdown">
@@ -49,16 +49,16 @@
           </ul>
         </li> -->
         <!-- <li><a href="#merch">Merch</a></li> -->
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="side_link" id="contact_sidebar" href="#contact">Contact</a></li>
         <li class="dropdown">
-          <a href="#social" class="dropdown-toggle" data-toggle="dropdown">Social
+          <a id="social_sidebar" href="#social" class="dropdown-toggle" data-toggle="dropdown">Social
             <span class="caret"></span></a>
           <ul class="dropdown-menu animated fadeInLeft" role="menu">
-            <li><a class="side_social" href="https://www.instagram.com/cantusportugueses" target="_blank"><i
+            <li><a class="side_link side_social" href="https://www.instagram.com/cantvsportugueses" target="_blank"><i
                   class="fab fa-instagram fa-fw"></i> Instagram</a></li>
-            <li><a class="side_social" href="https://www.youtube.com/@cantusportugueses344" target="_blank"><i
+            <li><a class="side_link side_social" href="https://www.youtube.com/@cantusportugueses344" target="_blank"><i
                   class="fab fa-youtube fa-fw"></i> Youtube</a></li>
-            <li><a class="side_social" href="https://www.facebook.com/cantusportugueses" target="_blank"><i
+            <li><a class="side_link side_social" href="https://www.facebook.com/cantusportugueses" target="_blank"><i
                   class="fab fa-facebook fa-fw"></i> Facebook</a></li>
           </ul>
         </li>
@@ -66,9 +66,9 @@
           <a href="#languages" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">translate</i>
             <span class="caret"></span></a>
           <ul class="dropdown-menu animated fadeInLeft" role="menu">
-            <li onclick="setLanguage('DE');"><a href="#lang-de">DE</a></li>
-            <li onclick="setLanguage('PT');"><a href="#lang-pt">PT</a></li>
-            <li onclick="setLanguage('EN');"><a href="#lang-pt">EN</a></li>
+            <li onclick="setLanguage('DE');"><a class="side_link" href="#lang-de">DE</a></li>
+            <li onclick="setLanguage('PT');"><a class="side_link" href="#lang-pt">PT</a></li>
+            <li onclick="setLanguage('EN');"><a class="side_link" href="#lang-pt">EN</a></li>
           </ul>
         </li>
 
@@ -96,7 +96,7 @@
 
         <div class="card-container">
           <div class="card">
-            <a href="hottub">
+            <span>
               <div class="card--display">
                 <i class="material-icons">equalizer</i>
                 <h2 id="card1_question">Next Concert</h2>
@@ -104,16 +104,16 @@
               <div class="card--hover">
                 <h2 id="card1_answer">Next Concert</h2>
                 <p id="card1_text">Our next concert will at the Burgerzentrum Ehrenfeld (BüzE) 16th November at 20h</p>
-                <p class="card_link">Click to see more</p>
+                <a class="card_link" href="#">Click to see more</a>
               </div>
-            </a>
+            </span>
             <div class="card--border"></div>
           </div>
         </div>
 
         <div class="card-container">
           <div class="card">
-            <a href="worldweb">
+            <span>              <!-- <a href="album"> -->
               <div class="card--display">
                 <i class="material-icons">album</i>
                 <h2 id="card2_question">Album</h2>
@@ -121,9 +121,9 @@
               <div class="card--hover">
                 <h2 id="card2_answer">Album</h2>
                 <p id="card2_text">Stay tuned to our social networks so you don't miss the release of our first album.</p>
-                <p class="card_link">Click to see more</p>
+                <a class="card_link" href="#">Click to see more</a>
               </div>
-            </a>
+            </span>
             <div class="card--border"></div>
           </div>
         </div>
@@ -131,7 +131,7 @@
         <div class="card-container">
           <!-- <div class="card card--dark"> -->
           <div class="card">
-            <a href="phonesoff">
+            <span>
               <div class="card--display">
                 <i class="material-icons">movie</i>
                 <h2 id="card3_question">Video Clip</h2>
@@ -139,16 +139,16 @@
               <div class="card--hover">
                 <h2 id="card3_answer">Video Clip</h2>
                 <p id="card3_text">Video of the song Mi Morena, recorded at the artist João de Almeida's atelier in the Wachsfabrik in Cologne.</p>
-                <p class="card_link">Click to see more</p>
+                <a class="card_link" href="#">Click to see more</a>
               </div>
-            </a>
+            </span>
             <div class="card--border"></div>
           </div>
         </div>
 
         <div class="card-container">
           <div class="card">
-            <a href="trainthings">
+            <span>
               <div class="card--display">
                 <i class="material-icons">train</i>
                 <h2 id="card4_question">Tour</h2>
@@ -156,9 +156,9 @@
               <div class="card--hover">
                 <h2 id="card4_question">Tour</h2>
                 <p id="card4_text">We play mostly in the NRW area, but we will be on tour in 2025 with concerts in Berlin and Hamburg.</p>
-                <p class="card_link">Click to see more</p>
+                <a class="card_link" href="#">Click to see more</a>
               </div>
-            </a>
+            </span>
             <div class="card--border"></div>
           </div>
         </div>
@@ -166,7 +166,7 @@
         <div class="card-container">
           <!-- <div class="card card--dark"> -->
           <div class="card">
-            <a href="androidupdate">
+            <span>
               <div class="card--display">
                 <i class="material-icons">phone_iphone</i>
                 <h2 id="card5_question">Follow us</h2>
@@ -174,9 +174,9 @@
               <div class="card--hover">
                 <h2 id="card5_answer">Follow us</h2>
                 <p id="card5_text">If you find us on instagram, youtube or facebook please follow us. That helps us reaching a wider audience.</p>
-                <p class="card_link">Click to see more</p>
+                <a class="card_link" href="#">Click to see more</a>
               </div>
-            </a>
+            </span>
             <div class="card--border"></div>
           </div>
         </div>
@@ -233,11 +233,11 @@
       <section class="page-section" id="sponsors">
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-3 m-3">
-            <img class="sponsors_image" src="assets/img/sponsors/Logo+DGACCP+(horizontal).jpg" alt="DGACCP Logo">
+            <img class="sponsors_image" src="assets/img/sponsors/Logo+DGACCP+(horizontal).png" alt="DGACCP Logo">
           </div>
 
           <div class="col-md-6 col-lg-3 m-3">
-            <img class="sponsors_image" src="assets/img/sponsors/botschaft_logo.jpg" alt="Botschaft Portugal Logo">
+            <img class="sponsors_image" src="assets/img/sponsors/botschaft_logo.png" alt="Botschaft Portugal Logo">
           </div>
           <div class="col-md-6 col-lg-3 m-3">
             <img class="sponsors_image" src="assets/img/sponsors/logo-ifm.svg" alt="Musik in Köln">

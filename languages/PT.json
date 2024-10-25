@@ -1,10 +1,11 @@
 {
-    "home": "Home",
-    "news": "Novidades",
-    "about": "Quem somos",
-    "events": "Concertos",
-    "gallery": "Galeria",
-    "contact": "Contacto",
+    "home_sidebar": "Home",
+    "news_sidebar": "Novidades",
+    "about_sidebar": "Nós",
+    "events_sidebar": "Concertos",
+    "gallery_sidebar": "Galeria",
+    "social_sidebar": "Social",
+    "contact_sidebar": "Contacto",
     "card1_question":"Próximo Concerto",
     "card1_answer":"Próximo Concerto",
     "card1_text":"O nosso próximo concerto será no Burgerzentrum Ehrenfeld (BüzE) no dia 16 de novembro às 20h",
@@ -24,5 +25,6 @@
     "bio":"O ensemble Cantus Portugueses é um grupo formado em 2017 e constituído essencialmente por músicos estudantes e ex-estudantes da Hochschule für Musik und Tanz Köln. O seu repertório é constituído por arranjos originais de música tradicional portuguesa, trazendo ao palco melodias conhecidas e características de diferentes regiões de Portugal. Trata-se de uma abordagem pessoal transposta a outro contexto estilístico, utilizando elementos da música erudita e aproveitando a bagagem e o percurso musical diversos dos elementos do grupo.",
     "concerts_heading": "Concertos",
     "concerts_date":"Data",
-    "concerts_place":"Local"
+    "concerts_place":"Local",
+    "contact_heading":"Contacto"
 }

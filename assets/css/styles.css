@@ -490,7 +490,7 @@ a[href*="#followme"]::before {
   width: 100%;
 }
 
-.card a {
+.card span {
   padding: 30px;
   width: 100%;
   height: 400px;
@@ -502,16 +502,16 @@ a[href*="#followme"]::before {
   transition: 0.25s ease;
 }
 
-.card a:hover {
+.card span:hover {
   transform: translate(-30px, -30px);
   border-color: #5bc0eb;
 }
 
-.card a:hover .card--display {
+.card span:hover .card--display {
   display: none;
 }
 
-.card a:hover .card--hover {
+.card span:hover .card--hover {
   display: block;
 }
 

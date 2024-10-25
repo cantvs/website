@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var trigger = $('.hamburger'),
         overlay = $('.overlay'),
-       isClosed = false;
+        isClosed = false;
 
       trigger.click(function () {
         hamburger_cross();
@@ -25,6 +25,14 @@ $(document).ready(function () {
     $('[data-toggle="offcanvas"]').click(function () {
           $('#wrapper').toggleClass('toggled');
     });
+
+    // Close sidebar when any link inside it is clicked
+    $('.side_link').click(function () {
+      if ($('#wrapper').hasClass('toggled')) {
+          $('#wrapper').removeClass('toggled');
+      }
+      hamburger_cross();
+  });
 
 });
 
@@ -51,12 +59,13 @@ function setLanguage(lang) {
 }
 
 function setLanguageText() {
-  // $('#home').text(language.home);
-  // $('#news').text(language.news);
-  // $('#about').text(language.about);
-  // $('#events').text(language.events);
-  // $('#gallery').text(language.gallery);
-  // $('#contact').text(language.contact);
+  $('#home_sidebar').text(language.home_sidebar);
+  $('#news_sidebar').text(language.news_sidebar);
+  $('#about_sidebar').text(language.about_sidebar);
+  $('#events_sidebar').text(language.events_sidebar);
+  $('#gallery_sidebar').text(language.gallery_sidebar);
+  $('#contact_sidebar').text(language.contact_sidebar);
+  $('#social_sidebar').text(language.social_sidebar);
   $('#card1_question').text(language.card1_question);
   $('#card1_answer').text(language.card1_answer);
   $('#card1_text').text(language.card1_text);
