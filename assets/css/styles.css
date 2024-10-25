@@ -441,7 +441,7 @@ a[href*="#followme"]::before {
 /* Centered text */
 .hero-text {
   position: absolute;
-  top: 120px;
+  top: 125px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Libre Baskerville', serif;
@@ -449,7 +449,7 @@ a[href*="#followme"]::before {
   font-weight: 600;
   letter-spacing: 1.5rem;
   color: #fff;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #news {
