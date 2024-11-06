@@ -8,7 +8,6 @@ $(document).ready(function () {
   });
 
   function hamburger_cross() {
-console.log("I am the function!")
     if (isClosed) {
       overlay.hide();
       trigger.removeClass('is-open');
@@ -28,7 +27,6 @@ console.log("I am the function!")
     links[i].addEventListener("click", function () {
       hamburger_cross ();
       toggleWrapper ();
-      console.log("Inside the Loop!")
     } );
   } ;
 

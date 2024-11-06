@@ -619,3 +619,20 @@ footer a{
   color: #fff;
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  .hero-text {
+    max-width: 80%;
+    padding-left: 10%;
+  /* right: 10%; */
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .hero-text {
+    max-width: 80%;
+    top: 45px;
+    padding-left: 20%;
+  /* right: 10%; */
+  }
+}
