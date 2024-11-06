@@ -8,8 +8,8 @@ $(document).ready(function () {
   });
 
   function hamburger_cross() {
-
-    if (isClosed == true) {
+console.log("I am the function!")
+    if (isClosed) {
       overlay.hide();
       trigger.removeClass('is-open');
       trigger.addClass('is-closed');
@@ -22,9 +22,24 @@ $(document).ready(function () {
     }
   }
 
+  // Moved this inside the $(document).ready() to ensure proper initialization.
+  let links = document.getElementsByClassName("side_link");
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+      hamburger_cross ();
+      toggleWrapper ();
+      console.log("Inside the Loop!")
+    } );
+  } ;
+
   $('[data-toggle="offcanvas"]').click(function () {
     $('#wrapper').toggleClass('toggled');
   });
+
+  function toggleWrapper() {
+    const wrapper = document.getElementById("wrapper");
+    wrapper.classList.toggle("toggled"); // Toggle the 'toggled' class on the #wrapper element
+  }
 
 });
 
@@ -91,4 +106,10 @@ function setLanguageText() {
   // $('#loginUsername')[0].innerHTML = language.loginUsername;
   // $('#current-user').text(localStorage.getItem('userID'));
 
+  // let links = document.getElementsByClassName("side_link");
+  // for (let i = 0; i < links.length; i++) {
+  //   links[i].addEventListener("click", hamburger_cross);
+  // } 
+
 }
+
