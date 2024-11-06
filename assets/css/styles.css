@@ -2,6 +2,8 @@ body {
   position: relative;
   overflow-x: hidden;
   background-color: #CFD8DC;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 body,
@@ -20,6 +22,8 @@ html {
 /*-------------------------------*/
 
 #wrapper {
+  padding: 0 0;
+  margin: 0 0;
   padding-left: 0;
   -webkit-transition: all 0.8s ease;
   -moz-transition: all 0.8s ease;
@@ -28,15 +32,19 @@ html {
 }
 
 #wrapper.toggled {
-  padding-left: 220px;
+  /* padding-left: 220px; */
+}
+
+.hamburger.is-open {
+ margin-left: 240px;
 }
 
 #sidebar-wrapper {
   z-index: 1000;
-  left: 220px;
+  /* left: 220px; */
   width: 0;
   height: 100%;
-  margin-left: -220px;
+  /* margin-left: -220px; */
   overflow-y: auto;
   overflow-x: hidden;
   background: #1a1a1a;
@@ -61,7 +69,7 @@ html {
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -220px;
+  /* margin-right: -220px; */
 }
 
 .page-section {
@@ -72,7 +80,8 @@ html {
 /*     Sidebar nav styles        */
 /*-------------------------------*/
 .navbar {
-  padding: 0;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 .sidebar-nav {
@@ -302,7 +311,7 @@ a[href*="#followme"]::before {
 .hamburger.is-closed:before {
   content: '';
   display: block;
-  width: 100px;
+  /* width: 100px; */
   font-size: 14px;
   color: #fff;
   line-height: 32px;
@@ -427,7 +436,7 @@ a[href*="#followme"]::before {
 
 .fullscreen-div {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -438,7 +447,7 @@ a[href*="#followme"]::before {
   /* Ensures the image covers the entire div */
 }
 
-/* Centered text */
+/* Centered Logo */
 .hero-text {
   max-height: 85px;
   max-width: 80%;
@@ -446,17 +455,17 @@ a[href*="#followme"]::before {
   top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Libre Baskerville', serif;
-  font-size: 3rem;
+  /* font-family: 'Libre Baskerville', serif; */
+  /* font-size: 3rem;
   font-weight: 600;
   letter-spacing: 1.5rem;
-  color: #fff;
+  color: #fff; */
 }
 
 .grady {
   position: absolute;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  height:100px;
+  height: 100px;
   width: 100%;
 }
 
@@ -578,6 +587,7 @@ a[href*="#followme"]::before {
 }
 
 table.table-striped tbody tr {
+
   border-bottom: 1px solid white;
   /* Apply white borders to rows */
 }
