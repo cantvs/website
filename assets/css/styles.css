@@ -492,6 +492,23 @@ a[href*="#followme"]::before {
   background: #d5e1cc;
 }
 
+#donate {
+  background: #599becb6;
+}
+
+.paypal {
+  width: 100px;
+  height: 100px; 
+  font-size: 100px;
+}
+
+.paypaldiv {
+  margin-left: 23dvw;
+}
+
+.donatediv {
+  display: flex;
+}
 
 
 /* CARDS */
