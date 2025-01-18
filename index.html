@@ -28,6 +28,10 @@
 
 
 
+
+
+
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,6 +53,7 @@
   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
   <!-- Begin Brevo Form -->
+<!-- Begin Brevo Form -->
 <!-- START - We recommend to place the below code in head tag of your website html  -->
 <style>
   @font-face {
@@ -344,7 +349,7 @@ background-color: #EFF2F7;                                 ">
 </div>
 <div></div>
 <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-<form id="sib-form" method="POST" action="https://f0bd9a24.sibforms.com/serve/MUIFAHCGuI1QRDOsNFflYwczwQtlR0Ay6xFqxEzwpuaBDogEaqdXkosYl2CGq3X2abrfzAFvUS4_MsmFJ0Vo0U5nAvvj9u5qXDpzknRNdkfszDp-DRhsMTa2VQKPLn3a6ifLJ8DZXSeMqbsxZYSwbuxJf32ZuJUipGOFs4s3B-Chz4FPPK2xS992FjByqPPPmUea_uZzEzE2Q9zn" data-type="subscription">
+<form id="sib-form" method="POST" action="https://f0bd9a24.sibforms.com/serve/MUIFAO8YoAG24bs3DoLDxP0B9mR5tPky4YBmiIkpo1HpGNotvXRCnCu2SfRC5-Fr-v5eqWG3NJhbRBkYrIFEuIge_pFgGaVrm1-NfjKShzo2-njOhuLRArBQ3oHQG4xZXLu8ULtDlc0j2QaqTNLvECqIvioEUZ_39OdhD2KwIfNqSWRc7XMokDSw40Cerp-iVZCrTQD3ygwBuGof" data-type="subscription">
 <div style="padding: 8px 0;">
  <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
    <p>Newsletter</p>
@@ -387,7 +392,21 @@ background-color: #EFF2F7;                                 ">
  </div>
 </div>
 <div style="padding: 8px 0;">
- <div class="g-recaptcha" data-sitekey="6LeGx7sqAAAAAL7FBtCKe3ZN_y8tthtFIm4ZeQc6" data-callback="invisibleCaptchaCallback" data-size="invisible" onclick="executeCaptcha"></div>
+ <div class="sib-captcha sib-form-block">
+   <div class="form__entry entry_block">
+     <div class="form__label-row ">
+       <script>
+         function handleCaptchaResponse() {
+           var event = new Event('captchaChange');
+           document.getElementById('sib-captcha').dispatchEvent(event);
+         }
+       </script>
+       <div class="g-recaptcha sib-visible-recaptcha" id="sib-captcha" data-sitekey="6LeGx7sqAAAAAL7FBtCKe3ZN_y8tthtFIm4ZeQc6" data-callback="handleCaptchaResponse" style="direction:ltr"></div>
+     </div>
+     <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+     </label>
+   </div>
+ </div>
 </div>
 
 <input type="text" name="email_address_check" value="" class="input--hidden">
@@ -499,6 +518,7 @@ background-color: #EFF2F7;                                 ">
 
   var AUTOHIDE = Boolean(1);
 </script>
+
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 
