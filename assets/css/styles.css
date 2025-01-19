@@ -76,6 +76,11 @@ html {
   padding: 6rem 0;
 }
 
+.disflex {
+  display: flex;
+  align-items: flex-start;
+}
+
 /*-------------------------------*/
 /*     Sidebar nav styles        */
 /*-------------------------------*/
@@ -507,7 +512,7 @@ a[href*="#followme"]::before {
 }
 
 .donatediv {
-  display: flex;
+  /* display: flex; */
 }
 
 
