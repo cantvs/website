@@ -7,6 +7,37 @@ $(document).ready(function () {
     hamburger_cross();
   });
 
+const concertsDiv = document.querySelector("#events tbody");
+
+  fetch("https://concerts-mwi2.onrender.com/concerts/cantvs").then(res =>{
+    if (!res.ok) {
+        throw new Error("Network Problem 😢" + res.statusText);
+    }
+    return res.json();
+}).then(concerts => {
+    console.log(concerts)
+    concerts.sort((a, b) => new Date(a.date) - new Date(b.date));
+    concerts.forEach((concert) => {
+      const date = new Date(concert.date); 
+      const formattedDate = new Intl.DateTimeFormat("de-DE", {
+        weekday: "long", 
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+      }).format(date);
+      const html = `
+        <tr>
+          <th scope="row">${formattedDate}</th>
+          <td><a class="text-white" href="${concert.link}" target="_blank">${description}</a></td>
+        </tr>
+      `;
+      concertsDiv.innerHTML += html;
+    })
+
+}).catch(error => {
+    console.error("Fetch Operation Not Working 🦇", error);
+});
+
   function hamburger_cross() {
     if (isClosed) {
       overlay.hide();

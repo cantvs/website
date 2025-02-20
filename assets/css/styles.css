@@ -31,9 +31,9 @@ html {
   transition: all 0.8s ease;
 }
 
-#wrapper.toggled {
-  /* padding-left: 220px; */
-}
+/* #wrapper.toggled {
+   padding-left: 220px; 
+} */
 
 .hamburger.is-open {
  margin-left: 240px;
@@ -509,10 +509,6 @@ a[href*="#followme"]::before {
 
 .paypaldiv {
   margin-left: 23dvw;
-}
-
-.donatediv {
-  /* display: flex; */
 }
 
 
