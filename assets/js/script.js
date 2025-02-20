@@ -28,7 +28,7 @@ const concertsDiv = document.querySelector("#events tbody");
       const html = `
         <tr>
           <th scope="row">${formattedDate}</th>
-          <td><a class="text-white" href="${concert.link}" target="_blank">${description}</a></td>
+          <td><a class="text-white" href="${concert.link}" target="_blank">${concert.description}</a></td>
         </tr>
       `;
       concertsDiv.innerHTML += html;
