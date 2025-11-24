@@ -26,7 +26,7 @@ html {
   background-color: #1a1a1aca;
   height: 100vh;
   width: 100vw;
-  z-index: 1001;
+  z-index: 1000;
 }
 .modal-hidden-hidden {
   display: block;
@@ -76,7 +76,7 @@ html {
 }
 
 #sidebar-wrapper {
-  z-index: 1000;
+  z-index: 999;
   /* left: 220px; */
   width: 0;
   height: 100%;
@@ -351,7 +351,7 @@ a[href*="#followme"]::before {
 .hamburger {
   position: fixed;
   top: 30px;
-  z-index: 999;
+  z-index: 998;
   display: block;
   width: 32px;
   height: 32px;
