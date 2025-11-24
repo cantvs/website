@@ -591,7 +591,9 @@ background-color: #EFF2F7;                                 ">
 const modalHidden = document.getElementsByClassName("modal-hidden")[0]
 const popupwindow = document.getElementsByClassName("popup")[0]
 const popuplink = document.querySelector(".popup a")
-window.onload = setTimeout(() => modalHidden.classList.add("modal-hidden-hidden"), 4000)
+window.onload = () => {
+  setTimeout(() => modalHidden.classList.add("modal-hidden-hidden"), 4000)
+}
 
 modalHidden.addEventListener("click", (e) => {
   // console.log(e.target)
