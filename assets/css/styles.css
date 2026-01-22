@@ -20,6 +20,7 @@ html {
 /*-------------------------------*/
 /*   Modal Window Crowdfunding   */
 /*-------------------------------*/
+/*
 .modal-hidden {
   display: none;
   position:fixed;
@@ -48,10 +49,7 @@ html {
     font-size: 1em;
   } 
 }
-
-.popup a {
-  /* margin: auto; */
-}
+*/
 
 /*-------------------------------*/
 /*           Wrappers            */
